@@ -9,8 +9,18 @@ inputs:
     default: '.'
     description: 'Path to package.json file (directories only), e.g. packages/mypackage/'
 outputs:
-  current-version:
-    description: 'Current version defined in the package.json file'
+  majorVersion:
+    description: 'Major version defined in the package.json file'
+  minorVersion:
+    description: 'Minor version defined in the package.json file'
+  fullVersion:
+    description: 'Full version defined in the package.json file'
+  majorRuntime:
+    description: 'Major runtime defined in the package.json file'
+  minorRuntime:
+    description: 'Minor runtime defined in the package.json file'
+  fullRuntime:
+    description: 'Full runtime defined in the package.json file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
