@@ -13,9 +13,12 @@ To use this action in your project, use the following:
 ```
 
 The Action sets output variables called
-* `full`
-* `minor` and
-* `major`
+* `fullVersion`
+* `minorVersion`
+* `majorVersion`
+* `fullRuntime`
+* `minorRuntime`
+* `majorRuntime`
 
 which can be used in a following step by using `${{ steps.package-version.outputs.full}}`.
 
